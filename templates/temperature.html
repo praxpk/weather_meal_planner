@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .center {
+            display: block;
+            margin: auto;
+            width: 90%;
+            border: 3px solid black;
+            padding: 20px;
+        }
+
+        .centerimg {
+            display: block;
+            margin: auto;
+            width: auto;
+        }
+
+        .center2 {
+            text-align: center;
+            margin: auto;
+            width: 90%;
+            border: 1px solid saddlebrown;
+            padding: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Current Temperature</title>
+</head>
+<body>
+<div class="center">
+
+    <div class="center2">
+        <h1>Date: {{date1}} </h1>
+        <h2> Max temperature in F : {{temp1}} degrees.</h2>
+        <h2> Weather Conditions : {{cond1}} </h2>
+        <img src="{{ url1 }}" class="centerimg">
+        <h2>Suggested Recipe For The Day: {{rcp1}}</h2>
+        <img src="{{ rcp_url1 }}" class="centerimg">
+        <h2>Ingredients: </h2>
+        <ol>
+            {%for i in range(0, len1)%}
+
+            <li>
+                {{ing1[i]}} <br>
+                <img src="{{ ing_url1[i] }}" class="centerimg"> <br>
+                <b>Suggested Walmart product:</b> <br>
+                <img src="{{ wal_url1[i] }}" class="centerimg"> <br>
+                <b>Price: ${{wal_cost1[i]}}</b>
+            </li>
+            {%endfor%}
+        </ol>
+    </div>
+
+    <div class="center2">
+        <h1> {{date2}} </h1>
+        <h2> Max temperature in F : {{temp2}} degrees.</h2>
+        <h2> Weather Conditions : {{cond2}} </h2>
+        <img src="{{ url2 }}" class="centerimg">
+        <h2>Suggested Recipe For The Day: {{rcp2}}</h2>
+        <img src="{{ rcp_url2 }}" class="centerimg">
+        <h2>Ingredients: </h2>
+        <ol>
+            {%for i in range(0, len2)%}
+
+            <li>
+                {{ing2[i]}} <br>
+                <img src="{{ ing_url2[i] }}" class="centerimg"> <br>
+                <b>Suggested Walmart product:</b> <br>
+                <img src="{{ wal_url2[i] }}" class="centerimg"> <br>
+                <b>Price: ${{wal_cost2[i]}}</b>
+            </li>
+
+
+            {%endfor%}
+        </ol>
+    </div>
+
+    <div class="center2">
+        <h1> {{date3}} </h1>
+        <h2> Max temperature in F : {{temp3}} degrees.</h2>
+        <h2> Weather Conditions : {{cond3}} </h2>
+        <img src="{{ url3 }}" class="centerimg">
+        <h2>Suggested Recipe For The Day: {{rcp3}}</h2>
+        <img src="{{ rcp_url3 }}" class="centerimg">
+        <h2>Ingredients: </h2>
+        <ol>
+            {%for i in range(0, len3)%}
+
+            <li>
+                {{ing3[i]}} <br>
+                <img src="{{ ing_url3[i] }}" class="centerimg"> <br>
+                <b>Suggested Walmart product:</b> <br>
+                <img src="{{ wal_url3[i] }}" class="centerimg"> <br>
+                <b>Price: ${{wal_cost3[i]}}</b>
+            </li>
+
+
+            {%endfor%}
+        </ol>
+    </div>
+
+    <div class="center2">
+        <h1> {{date4}} </h1>
+        <h2> Max temperature in F : {{temp4}} degrees.</h2>
+        <h2> Weather Conditions : {{cond4}} </h2>
+        <img src="{{ url4 }}" class="centerimg">
+        <h2>Suggested Recipe For The Day: {{rcp4}}</h2>
+        <img src="{{ rcp_url4 }}" class="centerimg">
+        <h2>Ingredients: </h2>
+        <ol>
+            {%for i in range(0, len4)%}
+
+            <li>
+                {{ing4[i]}} <br>
+                <img src="{{ ing_url4[i] }}" class="centerimg"> <br>
+                <b>Suggested Walmart product:</b> <br>
+                <img src="{{ wal_url4[i] }}" class="centerimg"> <br>
+                <b>Price: ${{wal_cost4[i]}}</b>
+            </li>
+
+
+            {%endfor%}
+        </ol>
+    </div>
+
+    <div class="center2">
+        <h1> {{date5}} </h1>
+        <h2> Max temperature in F : {{temp5}} degrees.</h2>
+        <h2> Weather Conditions : {{cond5}} </h2>
+        <img src="{{ url5 }}" class="centerimg">
+        <h2>Suggested Recipe For The Day: {{rcp5}}</h2>
+        <img src="{{ rcp_url5 }}" class="centerimg">
+        <h2>Ingredients: </h2>
+        <ol>
+            {%for i in range(0, len5)%}
+
+            <li>
+                {{ing5[i]}} <br>
+                <img src="{{ ing_url5[i] }}" class="centerimg"> <br>
+                <b>Suggested Walmart product:</b> <br>
+                <img src="{{ wal_url5[i] }}" class="centerimg"> <br>
+                <b>Price: ${{wal_cost5[i]}}</b>
+            </li>
+
+
+            {%endfor%}
+        </ol>
+    </div>
+
+    <div class="center2">
+        <h1> {{date6}} </h1>
+        <h2> Max temperature in F : {{temp6}} degrees.</h2>
+        <h2> Weather Conditions : {{cond6}} </h2>
+        <img src="{{ url6 }}" class="centerimg">
+        <h2>Suggested Recipe For The Day: {{rcp6}}</h2>
+        <img src="{{ rcp_url6 }}" class="centerimg">
+        <h2>Ingredients: </h2>
+        <ol>
+            {%for i in range(0, len6)%}
+
+            <li>
+                {{ing6[i]}} <br>
+                <img src="{{ ing_url6[i] }}" class="centerimg"> <br>
+                <b>Suggested Walmart product:</b> <br>
+                <img src="{{ wal_url6[i] }}" class="centerimg"> <br>
+                <b>Price: ${{wal_cost6[i]}}</b>
+            </li>
+
+
+            {%endfor%}
+        </ol>
+    </div>
+
+    <div class="center2">
+        <h1> {{date7}} </h1>
+        <h2> Max temperature in F : {{temp7}} degrees.</h2>
+        <h2> Weather Conditions : {{cond7}} </h2>
+        <img src="{{ url7 }}" class="centerimg">
+        <h2>Suggested Recipe For The Day: {{rcp7}}</h2>
+        <img src="{{ rcp_url7 }}" class="centerimg">
+        <h2>Ingredients: </h2>
+        <ol>
+            {%for i in range(0, len7)%}
+
+            <li>
+                {{ing7[i]}} <br>
+                <img src="{{ ing_url7[i] }}" class="centerimg"> <br>
+                <b>Suggested Walmart product:</b> <br>
+                <img src="{{ wal_url7[i] }}" class="centerimg"> <br>
+                <b>Price: ${{wal_cost7[i]}}</b>
+            </li>
+
+
+            {%endfor%}
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>

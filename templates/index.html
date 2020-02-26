@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .center {
+            display: block;
+            margin: auto;
+            width: auto;
+            border: 3px solid black;
+            padding: 20px;
+        }
+        .center2 {
+            text-align: center;
+            margin: auto;
+            width: 90%;
+            border: 1px solid saddlebrown;
+            padding: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Temperature Request</title>
+</head>
+<body>
+<div class="center2">
+    <h2>Welcome to Weather dish. Enter the zipcode (US ONLY) of your location and we will provide you the weather
+        for the next 7 days and give you a dish for that particular day based on the weather.
+        <br>
+        The ingredients are chosen to help you warm your body up (during cold days) or cool your body down
+        (during warm days) or fight flu (during rains).
+        <br>
+        We also provide the ingredient found at Walmart and present its price.
+        <br>
+    </h2>
+</div>
+<form method="POST" action="/temperature" class="center">
+    <b>Enter any US Zipcode</b> : <br>
+    <input type="text" name="zip">
+    <input type="submit">
+</form>
+<div class="center2">
+    <h2> We appreciate your patience as the page takes time to load! </h2>
+
+</div>
+</body>
+</html>
