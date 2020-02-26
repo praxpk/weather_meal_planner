@@ -1,3 +1,8 @@
+"""
+Please note this is a test page where all the methods were tested.
+The main pages of the application are application.py and weather_api.py
+
+"""
 from flask import Flask, render_template, request
 import requests
 import zeep
